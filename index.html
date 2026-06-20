@@ -1,0 +1,196 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html to</title>
+  </head>
+
+  <body style="background-color: grey;">
+    <h1 style="color: aquamarine;" ">test <b>hello</b></h1>
+    <h1 style="color: rgb(95, 158, 148);">test<i>hello</i></h1>
+    <h1 style="color: #5F829E;">test<big>hello</big></h1>
+    <h1 style="color: antiquewhite;">test<small>hello</small></h1>
+    <h1 style="color: red ;">test<sub>hello</sub></h1>
+    <h1 style="color: violet;">test<sup>hello</sup></h1>
+    <h1 style="color: pink;">test<ins>hello</ins></h1>
+    <h1 style="color: cornflowerblue;">test<del>hello</del></h1>
+    <h1 style="color: green;">test<mark>hello</mark></h1>
+
+    <a
+      href="page2.html"
+      target="_blank"
+      title="dadlahin ka sa page 2"
+      ><h1>second page</h1>
+    </a>
+
+    <audio controls autoplay muted loop>
+      <source src="audio.mp3">
+      <source src="audio.wav">
+      this browser does not support html5
+
+    </audio> 
+
+    <video controls loop muted width="200">
+      <source src="video.mp4">
+      <source src="video.wav">  
+      this browser does not support html5
+
+    </video>
+
+    <h2>Favorite Fruits</h2>
+
+<ul>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Mango</li>
+    <li>Orange</li>
+</ul>
+
+
+<h2>Steps to Make Coffee</h2>
+
+<ol type="A">
+    <li>Boil water</li>
+    <li>Add coffee powder</li>
+    <li>Pour hot water</li>
+    <li>Serve and enjoy</li>
+</ol>
+
+<h2>Programming Terms</h2>
+
+<dl>
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language used to create web pages.</dd>
+
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets used to style web pages.</dd>
+
+    <dt>JavaScript</dt>
+    <dd>A programming language used to make web pages interactive.</dd>
+</dl>
+
+<h3>Store Hours</h3>
+<table bgcolor="black">
+  <tr bgcolor="grey">
+    <th>Sunday</th>
+    <th>Monday</th>
+    <th>Tuesday</th>
+  </tr>
+  <tr bgcolor="lightgrey" align="center"> 
+    <td>closed</td>
+    <td>open</td>
+    <td>open</td>
+  </tr>
+
+</table>
+
+<button onclick="doSomething()" style="background-color: black;color: green;width: 100px;height: 50px;  " >click mo to</button>
+
+<p id="test">tignan mo to bago mo click</p>
+
+ <script>
+   function doSomething(){
+    document.getElementById("test").innerHTML = "uto uto" ;
+  }
+
+ </script>
+
+ <form action="action_page.php" method="post">
+  <div>
+  <label for="fname">first name:</label>
+  <input type="text" id="fname" name="fname" placeholder="Joven" required>
+</div>
+
+<br>
+
+<div>
+    <label for="lname">last name:</label>
+  <input type="text" id="lname" name="lname" placeholder="Reyes" required>
+</div>
+
+<br>
+
+ <div>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" placeholder="gawa ka password" required maxlength="10">
+</div>
+
+<br>
+
+ <div>
+  <label for="email">email:</label>
+  <input type="email" id="email" name="email" placeholder="Jreyes@gmail.com" required>
+</div>
+
+<br>
+
+ <div>
+  <label for="phone">phone number</label>
+  <input type="tel" id="phone" name="phone" placeholder="123456789" required>
+</div>
+
+<br>
+
+ <div>
+  <label for=bday">BirthDay:</label>
+  <input type="date" id="date" name="date" required>
+</div>
+
+<br>
+
+ <div>
+  <label for="quantity">quantity:</label>
+  <input type="number" id="quantity" name="quantity" placeholder="ilan ka" required min="0" max="100" value="1">
+</div>
+
+<br>
+
+<div>
+  <label for="title">title:</label>
+
+  <label for="Mr">Mr</label>
+  <input type="radio" id="Mr" name="title" id="Mr">
+
+   <label for="Ms">Ms</label>
+  <input type="radio" id="Ms" name="title" id="Ms">
+
+   <label for="phD">phD</label>
+  <input type="radio" id="phD" name="title" id="phD">
+</div>
+
+<br>
+
+<div>
+  <label for="payment">payment:</label>
+  <select name="payment" id="payment">
+    <option value="visa">visa</option>
+    <option value="gcash">gcash</option>
+    <option value="bdo">bdo</option>
+  </select>
+</div>
+
+<br>
+
+<div>
+  <label for="finish">tapos kana ba:</label>
+  <input type="checkbox" id="finish" name="finish">
+</div>
+
+<br>
+
+<div>
+  <input type="reset">
+</div>
+
+<br>
+
+<div>
+  <input type="submit">
+</div>
+
+ </form>
+
+  </body>
+</html>
